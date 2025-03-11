@@ -1,0 +1,5 @@
+from .curve_regression import plot_curve_regression
+from .linear_regression import plot_linear_regression
+from .polynomial_regression import plot_polynomial_regression
+
+from .multiple_regressions import plot_multiple_regressions
