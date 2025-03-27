@@ -1,0 +1,59 @@
+labtools/
+│
+├── __init__.py
+│
+├── analysis/
+│   ├── __init__.py
+│   ├── curve_regression.py
+│   ├── linear_regression.py
+│   ├── polynomial_regression.py
+│   ├── statistics.py
+│   └── table_calculations.py
+│
+├── data/
+│   ├── __init__.py
+│   ├── exports.py
+│   ├── extract_data.py
+│   ├── imports.py
+│   └── path_utils.py
+│
+├── plot/
+│   ├── __init__.py
+│   ├── curve_regression.py
+│   ├── linear_regression.py
+│   ├── multiple_regression.py
+│   ├── polynomial_regression.py
+│   └── utils.py
+│
+├── uncertainties/
+│   ├── __init__.py
+│   ├── format_round.py
+│   ├── propagation.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── latex.py
+│       └── symbolic.py
+│
+└── interface.py
+
+Common workflow pattern: Load data → Process → Visualize → Export
+
+_________________________________________________________
+
+                        T A S K S
+_________________________________________________________
+
+· Save statistics to excels
+
+· Are exponents correctly saved in the exported data?
+
+PolyReg Example:
+    abc = ['A','B','C','D','E','F','G']
+    df = pd.DataFrame({
+                'Round'    : roundlist,
+                'Monomial' : monos[::-1],
+                'Values'   : coefs,
+                'Errors'   : err
+                            }, index= abc[:n])
+
+· Error handling for the curve_regression.py module and formula handling
