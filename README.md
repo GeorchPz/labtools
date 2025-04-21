@@ -14,18 +14,6 @@ LabTools is an integrated toolkit for handling experimental data in scientific l
 
 The package is designed with a focus on proper uncertainty handling throughout the entire data analysis process.
 
-## Installation
-
-```bash
-# via pip (when published)
-pip install labtools
-
-# Development installation
-git clone https://github.com/username/labtools.git
-cd labtools
-pip install -e .
-```
-
 ## Dependencies
 
 - numpy
@@ -163,12 +151,3 @@ lab.plot_regression()
 ## License
 
 MIT License
-
-## Citation
-
-If you use LabTools in your research, please cite:
-
-```
-Pottiez López-Jurado, J. (2023). LabTools: A Python package for scientific data analysis with uncertainty propagation. 
-[Software]. Available from https://github.com/username/labtools
-```
